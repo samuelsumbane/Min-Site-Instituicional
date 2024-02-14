@@ -1,0 +1,32 @@
+
+$bg-primary: dodgerblue;
+$bg-secondary:aliceblue;
+
+$primary-color:rgb(3, 36, 80);
+$secondary-color:rgb(2, 31, 59);
+
+$btn-gb-primary:dodgerblue;
+$btn-bg-second:deepskyblue;
+$btn-radius:7px;
+$active-link-color:blue;
+$active-link-bg:transparent;
+
+$div-radius:10px;
+
+$ipiDiv-bg:rgb(6, 45, 82);
+
+
+$missionDiv-bg:rgb(2, 67, 104);
+$title-color: rgb(2, 67, 104);
+
+$visionDiv-bg: rgb(236, 207, 170);
+
+$valuesDiv-bg: rgb(2, 67, 104);
+
+
+@mixin wh($w, $h){
+    width:$w;
+    height:$h
+}
+
+

@@ -1,0 +1,217 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+nav{
+    /* position:fixed; */
+    z-index: 10;
+    left:0;
+    right:0;
+    top:0;
+    font-family: sans-serif;
+    height: 90px;
+    /* background-color:rgb(105, 198, 232); */
+    background-color:rgb(61, 114, 147);
+    backdrop-filter: blur(5px);
+}
+
+nav .logo{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.ipiLogo{
+    width: 29%;
+    max-width:120px;
+    margin:1%;
+}
+
+nav .links{
+    float: right;
+    padding:0;
+    margin:0;
+    width:60%;
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .links li{
+    list-style: none;
+}
+
+nav .links a{
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(236, 252, 252);
+    text-decoration: none;
+    border-radius:6px;
+
+}
+
+nav .links a:hover{
+    color:rgb(105, 198, 232);
+    transition: 0.7s;
+}
+
+.curso-li:hover .curso-submenu{
+    position: absolute;
+    margin-top:0.02%;
+    display: block;
+    background-color:rgba(105, 198, 232, .8);
+}
+
+.curso-submenu{
+    display: none;
+}
+
+.saude-link:hover .saude-submenu{
+    display: block;
+    position:absolute;
+    background-color:rgba(105, 198, 232, .8);
+    left:100%;
+    top:0;
+}
+
+.last-submenu{
+    display: none;   
+}
+
+.comercial-link:hover .comercial-submenu{
+    display: block;
+    position:absolute;
+    background-color:rgba(105, 198, 232, .8);
+    left:100%;
+    top:25%;
+}
+
+
+.industrial-link:hover .industrial-submenu{
+    display: block;
+    position:absolute;
+    background-color:rgba(105, 198, 232, .8);
+    left:100%;
+    top:55%;
+}
+
+.active-btn{
+    color:rgb(1, 37, 51) !important;
+}
+
+#nav-toggle{
+    position: absolute;
+    top:-100px;
+}
+
+nav .icon-burger{
+    display:none;
+    position:absolute;
+    right:5%;
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+nav .icon-burger .line{
+    width:30px;
+    height: 5px;
+    background-color: aliceblue;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+/* @media (orientation: portrait){
+    body{
+        background:blue;
+    }
+} */
+
+@media screen and (max-width: 768px){
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    .links{
+        height:auto;
+        position:fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		background-color: rgba(0, 49, 95, 0.849);
+		width:100%;
+		text-align: center;
+		transition: 0.6s
+    }
+
+    .links.active{
+        left:0;width:100%;
+        height:100vh;
+        margin-top:3%;
+        overflow-y: auto;
+    }
+    .links.active::-webkit-scrollbar{
+        width:10px;
+        background:transparent
+    }
+    .links.active::-webkit-scrollbar-thumb{
+        border-radius:5px;
+        background:rgba(0, 49, 95, 0.966);
+    }
+
+    nav .links a{
+        font-size: 20px;
+    }
+
+    nav :checked ~ .links{
+        bottom:0;
+    }
+
+    nav .icon-burger{
+        display: block;
+    }
+
+    nav :checked ~ .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+ 
+    nav :checked ~ .icon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    nav :checked ~ .icon-burger .line:nth-child(2){
+        opacity:0;
+    }
+
+
+    .sobrenosdiv{
+        width:70% !important;
+        min-width:220px !important;
+        margin:15px !important;
+        min-height:30px;
+        max-height:200px;
+    }
+
+    .sobrenosdiv:hover{
+        transform: scale(1) !important;
+    }
+
+    .container-header h1{
+        padding:20px;
+        text-align: center !important;
+        color:rgb(3, 36, 80); 
+    }
+
+
+}
+
+/* @media screen and (max-width:510px){
+     .main-footer{
+        position:relative !important;
+        bottom:0 !important;
+        margin-top: 170%;
+    }
+} */

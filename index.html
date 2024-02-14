@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/slide.css">
+    <link rel="shortcut icon" href="src/imgs/ipiLogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <nav>
+            <input type="checkbox" name="" id="nav-toggle">
+            <div class="logo">
+                <img class="ipiLogo" src="src/imgs/ipiLogo.png" alt="">
+            </div>
+
+            <button type="button" onclick="myFunction()" id="switch"></button>
+
+
+            <ul class="links">
+                <li><a href="index.html" class="achor active-btn">Página Inicial</a></li>
+
+                <li class="curso-li">
+                    <a>Cursos</a>
+                    <div class="curso-submenu">
+                        <ul>
+                            <li class="sub-li saude-link">
+                                <a>Saúde</a>
+                                <div class="last-submenu saude-submenu">
+                                    <ul>
+                                        <li><a href="src/pages/farmacia.html">Farmácia</a></li>
+										<li><a href="src/pages/enfermagemGeral.html">Enfermagem Geral</a></li>
+										<li><a href="src/pages/esmi.html">Enfermagem em Saúde Materno Infantil</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="sub-li comercial-link">
+                                <a>Comerciais</a>
+                                <div class="last-submenu comercial-submenu">
+                                    <ul>
+                                        <li><a href="src/pages/gestao.html">Gestão</a></li>
+                                        <li><a href="src/pages/contabilidade.html">Contabilidade</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="sub-li industrial-link">
+                                <a>Industriais</a>
+                                <div class="last-submenu industrial-submenu">
+                                    <ul>
+                                        <li><a href="src/pages/mie.html">MIE e Electricidade industrial</a></li>
+                                        <li><a href="src/pages/ccivil.html">Construcão Cívil</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="src/pages/informatica.html">TIC's</a></li>
+
+                            
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="./src/pages/sobrenos.html" class="anchor">Sobre nós</a></li>
+                <li><a href="./src/pages/doacoes.html" class="anchor">Doações</a></li>
+                <li><a href="https://web.facebook.com/people/Instituto-Polit%C3%A9cnico-%C3%8Dndico/100054342052987/?sk=photos&locale=pt_BR" target="_blank">Facebook</a></li>
+
+            </ul>
+
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+
+        <div class="container">
+            <!-- <br><br><br> -->
+            <!-- <div class="container-header">
+                <br>
+                <br>
+            </div> -->
+            <div class="container-body" >
+                <!-- <img src="src/imgs/wallpaperflare.com_wallpaper (6).jpg" alt=""> -->
+                <div class="slider">
+                    <div class="list">
+                       
+                        <div class="item">
+                            <img src="src/imgs/SLIDE10.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="src/imgs/SLIDE11.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="src/imgs/Agropecuaria.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="src/imgs/enfarmagem.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="src/imgs/SLIDE17.JPG" alt="">
+                        </div>
+            
+                    </div>
+            
+                    <div class="buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+            
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+            
+                </div>
+                <br><br>
+
+                <div class="saude-cursos div-curso-info" style="margin-top:5%; color: black;">
+                    <br><br>
+                    <h2 class="cursos-big-title">A IPI Forma Técnicos Profissionais de Saúde</h2>
+                    <br>
+
+                    <div class="curso-info-home">
+                        <div class="curso-pic-div">
+                            <img class="curso-pic" src="src/imgs/tmg.jpg" alt="">
+                        </div>
+        
+                        <div class="curso-info-div">
+                            <div>
+                                <br>
+                                <p>
+                                    Um Técnico de saúde é um profissional qualificado que actua em ações integradas de promoção, prevenção, recuperação e reabilitação nos processos saúde/doença.
+                                    É um profissional rapidamente adaptável às mudanças, flexível, que possui um bom relacionamento interpessoal, com iniciativa capaz de visualizar e resolver problemas, 
+                                    realizando uma assistência humanizada, e, colaborando com atendimento à necessidade de saúde dos pacientes e da comunidade, em todas as faixas etárias, promovendo acções 
+                                    de educação para o autocuidado, de segurança no trabalho e de biossegurança na saúde. <br> <br>
+                                    No que tange o atendimento da realização das atividades técnicas de sua competência o técnico deve observar, reconhecer e descrever os sintomas, verificar sinais vitais, 
+                                    realizar procedimentos e cuidados nos períodos pré, trans e pós operatórios, curativos, aplicações parenterais, vacinação, nebulização, higiene e conforto, atendimento a urgências e emergências, executar procedimentos prescritos. <br> <br>
+                                    Na perspectiva do atendimento integral e de qualidade é um profissional que aplica os princípios e normas de higiene e conforto, que aplica o código de ética profissional da categoria,
+                                     que domina habilidades básicas de comunicação, que valoriza a saúde como direito individual e dever para com o coletivo. <br>
+                                    A duração dos cursos da Saúde variam de 2 a 2.5 anos com garantia de estágios.
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="CIT-cursos div-curso-info" style="margin-top:5%; color: black;">
+                    <br><br>
+                    <h2 class="cursos-big-title">A IPI Forma Técnicos Profissionais Em TICs </h2>
+                    <br>
+                    <div class="curso-info-home">
+                        <div class="curso-pic-div">
+                            <img class="curso-pic" src="src/imgs/info.png" alt="">
+                        </div>
+        
+                        <div class="curso-info-div">
+                            <div>
+                                <br>
+                                <p>Um Técnico informático pode auxiliar empresas e consumidores na instalação, configuração e manutenção de softwares e hardwares. 
+                                    Ou seja, profissionais da área podem actuar em diversas actividades que exijam o suporte técnico para equipamentos e sistemas tecnológicos como: Montagem, 
+                                    instalação e manutenção de computadores; 
+                                    Instalação de redes; Suporte técnico e correção de problemas; 
+                                    Programação, instalação e manutenção de softwares; 
+                                    Recuperação e backup de dados; Desenvolvimento de sistemas; 
+                                    Criação de websites. 
+                                </p>
+                                <p>A duração dos cursos TICs é de 3 anos com garantia de estágio.</p>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CIT-cursos div-curso-info" style="margin-top:5%; color: black;">
+                    <br><br>
+                    <h2 class="cursos-big-title">A IPI Forma Técnicos Profissionais Nas Áreas Comerciais </h2>
+                    <br>
+                    <div class="curso-info-home">
+                        <div class="curso-pic-div">
+                            <img class="curso-pic" src="src/imgs/contabilidade.png" alt="">
+                        </div>
+        
+                        <div class="curso-info-div">
+                            <div>
+                                <p> Um Técnico Comércial pode exercer as seguintes funções: assessorar a gestão do estabelecimento comercial, 
+                                    valendo-se de sua capacidade de planejamento, organização, direção e controle das actividades comerciais; 
+                                    estabelecer e aprimorar relações comunicativas que facilitem o bom desempenho das atividades com interlocutores internos e externos; 
+                                    aplicar ferramentas gerenciais em marketing, gestão de pessoas, finanças, qualidade e logística; identificar e actuar nos elementos que interferem no comportamento dos consumidores e nos fatores de marketing nas organizações; 
+                                    organizar o espaço comercial com vistas a torná-lo mais atrativo e harmônico; conhecer os principais aspectos da legislação que regulamenta as actividades comerciais e trabalhistas. <br>
+                                    A duração do curso é de três (3) anos com garantia de estágio.
+                                </p>
+                                <!--<br>
+                                <hr>
+                                <br>
+                                <p>
+                                    Um técnico de manutenção industrial eléctrica pode atuar nas indústrias e/ou construtoras prestando assistências técnicas de máquinas industriais.
+                                </p>
+                                <br><hr><br>
+                                <p>A duração dos cursos comerciais, industriais e TICs é de 3 anos.</p>
+                                <br>
+                                <!-- <p>
+                                    <button class="anchorButton" title="dos cursos Comerciais, Industriais e TICs">Mais informações</button>
+                                </p> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+            </div> 
+        </div>
+        <br><br>
+
+        <div class="container-footer">
+            <div>
+                <div id="contactandlocation">
+                    <div id="location">
+                        <div id="geoicon"></div>
+                        <p>GAZA, CHONGOENE, MUHETANE</p>
+                    </div>
+
+                    <div id="contact">
+                        <div id="contacticon"></div>
+                        <p class="contact-p"> +258 865230661</p>
+                    </div>
+                </div>
+
+                <br>
+                <div id="copyrightdiv">
+                    <p class="copyright"> Copyright © Instituto Politécnico Índico - Por uma Equidade e Profissionalismo</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+ 
+    <script src="src/script/main.js"></script>
+    
+</body>
+    <!-- <script>
+        if(localStorage.getItem('modo') == "dark-mode"){
+            let switchbtn = document.getElementById('switch');switchbtn.classList.add('night')
+        }
+    </script> -->
+
+</html>

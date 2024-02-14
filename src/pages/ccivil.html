@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/ipiLogo.png" type="image/x-icon">
+
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+    
+    <section>
+        <nav>
+            <input type="checkbox" name="" id="nav-toggle">
+            <div class="logo">
+                <img class="ipiLogo" src="../imgs/ipiLogo.png" alt="">
+            </div>
+            <button type="button" onclick="myFunction()" id="switch"></button>
+
+            <ul class="links">
+                <li><a href="../../index.html" class="">Página Inicial</a></li>
+                <li class="curso-li">
+                    <a class="active-btn">Cursos</a>
+                    <!-- <p>Cursos</p> -->
+                    <div class="curso-submenu">
+                        <ul>
+                            <li class="sub-li saude-link">
+                                <a>Saúde</a>
+                                <div class="last-submenu saude-submenu">
+                                    <ul>
+                                        <li><a href="farmacia.html">Farmácia</a></li>
+                                        
+										<li><a href="enfermagemGeral.html">Enfermagem Geral</a></li>
+										<li><a href="esmi.html" class="active-btn">Enfermagem em Saúde Materno Infantilr</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="sub-li comercial-link">
+                                <a>Comerciais</a>
+                                <div class="last-submenu comercial-submenu">
+                                    <ul>
+                                        <li><a href="">Gestão</a></li>
+                                        <li><a href="">Contabilidade</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="sub-li industrial-link">
+                                <a>Industriais</a>
+                                <div class="last-submenu industrial-submenu">
+                                    <ul>
+                                        <li><a href="mie.html">MIE e Electricidade industrial</a></li>
+                                        <li><a href="ccivil.html" class="active-btn">Construcão Cívil</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="informatica.html">TIC's</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=" sobrenos.html">Sobre nós</a></li>
+                <li><a href="doacoes.html" class="anchor">Doações</a></li>
+				<li><a href="https://web.facebook.com/people/Instituto-Polit%C3%A9cnico-%C3%8Dndico/100054342052987/?sk=photos&locale=pt_BR" target="_blank">Facebook</a></li>
+                <li><a href="https://www.youtube.com/channel/UC215DIBwAFbwjUhLlTjpaYQ" target="_blank">Youtube</a></li>
+                
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+
+        <div class="container">
+            <div class="container-header">
+                <h1>Construção Civíl</h1>
+            </div><br/><br><br>
+            <div class="container-body-s">
+                <div class="curso-pic-div">
+                    <img class="curso-pic" src="../imgs/Construcao Civiil.jpg" alt="">
+                </div>
+
+                <div class="curso-info-div">
+                    <div>
+						<h2>Foco</h2>
+						<p>
+                            Formar profissionais com qualificações teóricas e práticas, capazes de conceber plantas e memórias descritivase realizar elementos prefabricados de betão de cimento; gerir um estaleiro e uma pequena empresa de construção; participar na implantação e supervisionar projectos de Engenharia Civil; e efectuar análises de coberturas betuminosas.
+						</p>
+					</div>
+					
+					<div>
+						<h2>Duração</h2>
+						<p>
+                            Três (03) anos.
+						</p>
+					</div>
+					
+					<div>
+						<h2>Saídas profissionais</h2>
+						<p>
+                            Um técnico deconstrução civil pode atuar como gestor de obras; projectistas; medidor, orçamentista e fazedor de cálculos estruturais; fiscal de obras; director de obras; e fornecimento de serviços.
+						</p>
+					</div>
+                </div>
+
+            </div>
+            <div class="container-footer">
+                <div>
+                    <div id="contactandlocation">
+                        <div id="location">
+                            <div id="geoicon"></div>
+                            <p>GAZA, CHONGOENE, MUHETANE</p>
+                        </div>
+    
+                        <div id="contact">
+                            <div id="contacticon"></div>
+                            <p class="contact-p"> +258 865230661</p>
+                        </div>
+                    </div>
+    
+                    <br>
+                    <div id="copyrightdiv">
+                        <p class="copyright"> Copyright © Instituto Politécnico Índico - Por uma Equidade e Profissionalismo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+    <script src="../script/main.js"></script>
+    <script>
+        if(localStorage.getItem('modo') == "dark-mode"){
+            let switchbtn = document.getElementById('switch');switchbtn.classList.add('night')
+        }
+    </script>
+</html>
