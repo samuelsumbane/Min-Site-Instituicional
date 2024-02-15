@@ -193,7 +193,7 @@ section{
                 display: flex;
             // overflow: hidden;
                 .curso-pic{
-                    // background-size: cover;
+                    background-size: cover;
                     width:100%;
                     height:80%;
                     margin:auto;
@@ -400,6 +400,22 @@ body::-webkit-scrollbar-thumb{
     }
 
     #switch{left:70%;}
+
+    .container-body-s{
+        display: flex;
+        flex-direction: column;
+
+        div{ width: 90% !important;}
+
+        .curso-pic-div{
+            background-size: cover;
+            margin:auto;
+        }
+
+        .curso-info-div{
+            margin-top:8% !important;
+        }
+    }
 
 }
 
